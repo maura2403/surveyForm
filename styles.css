@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/*to do:
+animation for submit button,
+change link color when its been pressed
+add useful links to lern more about carpinchos
+media queries
+add carpincho images
+add variables and their fallbacks
+*/
 /*
 font-family: 'Montserrat', sans-serif;
 
@@ -106,4 +114,21 @@ button{
 
 .comments{
     flex-direction: column;
+}
+
+footer{
+    background-color:#156945;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+a:hover{
+    color: #FFD700;
+}
+.github {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
 }
