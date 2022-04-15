@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*to do:
+animation for submit button,
+change link color when its been pressed
+add useful links to lern more about carpinchos
+media queries
+add carpincho images
+add variables and their fallbacks
+*/
+/*
+font-family: 'Montserrat', sans-serif;
+
+dark green: #004F2D
+lighter green: #156945
+yellow: #FFD700
+
+wikipedia:
+https://en.wikipedia.org/wiki/Capybara
+https://es.wikipedia.org/wiki/Hydrochoerus_hydrochaeris
+vector:
+https://avatars.githubusercontent.com/u/33059908?s=280&v=4
+
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url("https://thumbs.dreamstime.com/b/vector-light-grey-succulent-plant-texture-drawing-seamless-pattern-background-great-subtle-botanical-modern-backgrounds-fabric-90904464.jpg");
+    background-color: #004F2D;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+}
+header{
+    color: #FFD700;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 0;
+    
+}
+h1{
+    font-size: 2.5rem;
+}
+.silhouette{
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width:60%;
+    margin: 0 auto;
+   /*check how does it look without the background color*/
+   background-color: #156945;
+   color: white;
+   border-radius: 10px;
+   padding: 1rem;
+}
+fieldset{
+    display: flex;
+    border: none;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 0.5rem;
+}
+legend{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #FFD700;
+}
+
+.personal-group{
+    flex-direction: column;
+}
+.personal-input, .dropdown{
+    border:none;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.radio-group, .checkbox-group{
+    justify-content: space-between; 
+}
+[type="radio"], [type="checkbox"]{
+    cursor: pointer;
+}
+.column{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.radio-group label, .checkbox-group label{
+    padding: 0.5rem;
+}
+button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFD700;
+    border: none;
+    color:#004F2D;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comments{
+    flex-direction: column;
+}
+
+footer{
+    background-color:#156945;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+a:hover{
+    color: #FFD700;
+}
+.github {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}

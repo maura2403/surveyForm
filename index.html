@@ -9,101 +9,131 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Student's Survey Form</h1>
-        <p id="description">Thanks for answering this survey about your student life!</p>
+        <h1 id="title">Carpincho Survey Form</h1>
+        <p id="description">Thanks for answering this survey about your knowledge about carpinchos!</p>
+        <img src="assets/carpincho2.png" alt="carpincho silohuette" class="silhouette">
     </header>
     <main>
         <form action="" id="survey-form">
-            
+            <!--Carpincho info :) -->
+            <fieldset class="intro">
+                <p>The capybara (Hydrochoerus hydrochaeris) is a giant cavy rodent commonly known by many names. In fact, it is the largest living rodent both in size and weight. Its close relatives include guinea pigs and rock cavies, and it is more distantly related to the agouti, the chinchilla, and the nutria. The capybara inhabits savannas and dense forests and lives near bodies of water. It is a highly social species and can be found in groups as large as 100 individuals, but usually lives in groups of 10-20 individuals.</p>
+
+            </fieldset>
             <!--Personal info-->
-            <fieldset>
-                <legend>Personal information</legend>
-                <label for="name" id="name-label">Name
-                    <input type="text" id="name" placeholder="Name" required>
-                </label>
-                <label for="Age" id="number-label">Age
-                    <input type="number" id="number" min="1" max="3" placeholder="Age">
-                </label>
-                <label for="email" id="email-label">Email
-                    <input type="email" id="email" placeholder="email@example.com" required>
-                </label>
+            <fieldset class="personal-group">
+                <legend>Personal information:</legend>
+                <label for="name" id="name-label" class="personal-label">Name</label>
+                    <input type="text" id="name" class="personal-input" placeholder="Name" required>
+                
+                <label for="Age" id="number-label" class="personal-label">Age</label>
+                    <input type="number" id="number" class="personal-input" min="1" max="110" placeholder="Age">
+                
+                <label for="email" id="email-label" class="personal-label">Email</label>
+                    <input type="email" id="email" class="personal-input" placeholder="email@example.com" required>
+                
             </fieldset>
                 
             <!--Formal questions-->
             <!--Label or p or something to put "Highest education level reached:"-->
-            <select name="education" id="dropdown">
-                <option value="AttendingHighschool">Attending Highschool</option>
-                <option value="GraduatedHighschool">Graduated Highschool</option>
-                <option value="AttendingCollege">Attending College</option>
-                <option value="GraduatedCollege">Graduated College</option>
-            </select>
+            <fieldset >
+                <legend>With what name do you refer to carpinchos?</legend>
+                    
+                <select name="naming" id="dropdown" class="dropdown">
+                    <option value="carpincho">Carpincho</option>
+                    <option value="capibara">Capibara/Capybara</option>
+                    <option value="chiguiro">Chigüiro</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
 
-            <fieldset>
+            <fieldset class="radio-group">
                 <legend>Choose one:</legend>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one" checked>
-                    One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-            </fieldset>
+                <div class="column">
 
-            <fieldset>
+                    <label for="one">
+                        <input type="radio" name="blabla" id="one" value="one" checked>
+                        One
+                    </label>
+                    <label for="one">
+                        <input type="radio" name="blabla" id="one" value="one">
+                        One
+                    </label>
+                    
+                    <label for="one">
+                        <input type="radio" name="blabla" id="one" value="one">
+                        One
+                    </label>
+                </div>
+                <div class="column">
+                    <label for="one">
+                        <input type="radio" name="blabla" id="one" value="one">
+                        One
+                    </label>
+                    <label for="one">
+                        <input type="radio" name="blabla" id="one" value="one">
+                        One
+                </label>
+                <label for="one">
+                    <input type="radio" name="blabla" id="one" value="one">
+                    One
+                </label>
+            </div>
+            </fieldset>
+            
+            <fieldset class="checkbox-group">
                 <legend>Choose various options</legend>
+
+            
+            <div class="column">    
                 <label for="two">
                     <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
+                    Grass
                 </label>
                 <label for="two">
                     <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
+                    Tree Bark
                 </label>
                 <label for="two">
                     <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
+                    Fruits
+                </label>
+            </div>
+            <div class="column">
+                <label for="two">
+                    <input type="checkbox" name="bleble" id="two" value="two">
+                    Aquatic plants
                 </label>
                 <label for="two">
                     <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
+                    their own feces
                 </label>
                 <label for="two">
                     <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
+                    Very specific leaves
                 </label>
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Two
-                </label>
+            </div>
             </fieldset>
 
-            <label for="comments">
-                Your comments:
-                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
-            </label>
+            <fieldset class="comments">
+                <legend>Leave us a comment!</legend>
+                <label for="comments" class="comment-label">Your comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+                
+            </fieldset>
+        
             <button type="submit" id="submit">Submit</button>
         </form>
 
     </main>
     <footer>
-
+<!-- poner nombre, año, link al github y link a fcc -->
+        <p>Maura Roll 2022 - <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Survey Form</a> project for <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>.</p>
+        <div >
+            <a href="https://github.com/maura2403/surveyForm"class="github">
+            <img src="assets/GitHub-logoLight.png" alt="github logo" >
+            <p>Check the project on github!</p></a>
+        </div>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
