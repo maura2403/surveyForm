@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/carpincho(2).png" type="image/x-icon">
     <title>Survey Form</title>
 </head>
 <body>
     <header>
         <h1 id="title">Carpincho Survey Form</h1>
-        <p id="description">Thanks for answering this survey about your knowledge about carpinchos!</p>
+        <p id="description">Thanks for answering this knowledge survey about carpinchos!</p>
         <img src="assets/carpincho2.png" alt="carpincho silohuette" class="silhouette">
     </header>
     <main>
+
         <form action="" id="survey-form">
-            <!--Carpincho info :) -->
             <fieldset class="intro">
-                <p>The capybara (Hydrochoerus hydrochaeris) is a giant cavy rodent commonly known by many names. In fact, it is the largest living rodent both in size and weight. Its close relatives include guinea pigs and rock cavies, and it is more distantly related to the agouti, the chinchilla, and the nutria. The capybara inhabits savannas and dense forests and lives near bodies of water. It is a highly social species and can be found in groups as large as 100 individuals, but usually lives in groups of 10-20 individuals.</p>
+                <p>The capybara or carpincho (Hydrochoerus hydrochaeris) is a giant cavy rodent commonly known by many names. In fact, it is the largest living rodent in both size and weight. Its close relatives include guinea pigs and rock cavies, and it is more distantly related to the agouti, the chinchilla, and the nutria. The capybara inhabits savannas and dense forests and lives near bodies of water. It is a highly social species and can be found in groups as large as 100 individuals, but usually lives in groups of 10-20 individuals.</p>
 
             </fieldset>
-            <!--Personal info-->
+            
             <fieldset class="personal-group">
                 <legend>Personal information:</legend>
                 <label for="name" id="name-label" class="personal-label">Name</label>
@@ -33,11 +34,9 @@
                     <input type="email" id="email" class="personal-input" placeholder="email@example.com" required>
                 
             </fieldset>
-                
-            <!--Formal questions-->
-            <!--Label or p or something to put "Highest education level reached:"-->
+            
             <fieldset >
-                <legend>With what name do you refer to carpinchos?</legend>
+                <legend>What do you call this beautiful animal?</legend>
                     
                 <select name="naming" id="dropdown" class="dropdown">
                     <option value="carpincho">Carpincho</option>
@@ -48,69 +47,152 @@
             </fieldset>
 
             <fieldset class="radio-group">
-                <legend>Choose one:</legend>
+                <legend>What does the word "capybara" mean?</legend>
+                <div class="column">
+                    <label for="grass">
+                        <input type="radio" name="nameMeaning" id="grass" value="grass">
+                        Master of the grass
+                    </label>
+                    <label for="water">
+                        <input type="radio" name="nameMeaning" id="water" value="water">
+                        Master of the water
+                    </label>        
+                </div>
+                <div class="column">
+                    <label for="dirt">
+                        <input type="radio" name="nameMeaning" id="dirt" value="dirt">
+                        Master of the dirt
+                    </label>
+                    <label for="tree">
+                        <input type="radio" name="nameMeaning" id="tree" value="tree">
+                        Master of the tree
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="radio-group">
+                <legend>Where do carpincho's live?</legend>
                 <div class="column">
 
-                    <label for="one">
-                        <input type="radio" name="blabla" id="one" value="one" checked>
-                        One
+                    <label for="asia">
+                        <input type="radio" name="continent" id="asia" value="asia">
+                        Asia
                     </label>
-                    <label for="one">
-                        <input type="radio" name="blabla" id="one" value="one">
-                        One
+                    <label for="northAmerica">
+                        <input type="radio" name="continent" id="northAmerica" value="northAmerica">
+                        North America
                     </label>
                     
-                    <label for="one">
-                        <input type="radio" name="blabla" id="one" value="one">
-                        One
+                    <label for="australia">
+                        <input type="radio" name="continent" id="australia" value="australia">
+                        Australia
                     </label>
                 </div>
                 <div class="column">
-                    <label for="one">
-                        <input type="radio" name="blabla" id="one" value="one">
-                        One
+                    <label for="southAmerica">
+                        <input type="radio" name="continent" id="southAmerica" value="southAmerica">
+                        South America
                     </label>
-                    <label for="one">
-                        <input type="radio" name="blabla" id="one" value="one">
-                        One
-                </label>
-                <label for="one">
-                    <input type="radio" name="blabla" id="one" value="one">
-                    One
-                </label>
-            </div>
+                    <label for="africa">
+                        <input type="radio" name="continent" id="africa" value="africa">
+                        Africa
+                    </label>
+                    <label for="europe">
+                        <input type="radio" name="continent" id="europe" value="europe">
+                        Europe
+                    </label>
+                </div>
             </fieldset>
-            
-            <fieldset class="checkbox-group">
-                <legend>Choose various options</legend>
+        
+            <fieldset >
+                <legend>In what kink of habitat do they live?</legend>
+                <select name="habitat" id="habitat-dropdown" class="dropdown">
+                    <option value="desert">In a dry desert area</option>
+                    <option value="forestWater">In a densely forested area with bodies of water nearby</option>
+                    <option value="highTundra">In an alpine tundra high on a mountain</option>
+                    <option value="beach">On a coastal beach without much vegetation</option>
+                </select>
+            </fieldset>
 
-            
+            <fieldset class="radio-group">
+                <legend>What kind of noises do carpinchos make to communicate?</legend>
+                <div class="column">
+                    <label for="squeals">
+                        <input type="radio" name="continent" id="squeals" value="squeals">
+                        Squeals
+                    </label>
+                    <label for="barcks">
+                        <input type="radio" name="continent" id="barcks" value="barcks">
+                        Barcks
+                    </label>
+                    
+                    <label for="whistles">
+                        <input type="radio" name="continent" id="whistles" value="whistles">
+                        Whistles
+                    </label>
+                </div>
+                <div class="column">
+                    <label for="purs">
+                        <input type="radio" name="continent" id="purs" value="purs">
+                        Purrs
+                    </label>
+                    <label for="grunts">
+                        <input type="radio" name="continent" id="grunts" value="grunts">
+                        Grunts
+                    </label>
+                    <label for="all">
+                        <input type="radio" name="continent" id="all" value="all">
+                        All of the above
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset >
+                <legend>How long do they live on average?</legend>          
+                <select name="lifespan" id="lifespan-dropdown" class="dropdown">
+                    <option value="3-4years">3-4 years</option>
+                    <option value="5-6years">5-6 years</option>
+                    <option value="8-10years">8-10 years</option>
+                    <option value="15-20years">15-20 years</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="checkbox-group">
+                <legend>What do they eat?</legend>
             <div class="column">    
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Grass
+                <label for="grass">
+                    <input type="checkbox" name="diet" id="grass" value="grass">
+                    Grass/Leaves
                 </label>
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Tree Bark
+                <label for="fish">
+                    <input type="checkbox" name="diet" id="fish" value="fish">
+                    Fish
                 </label>
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Fruits
+                <label for="smallAnimal">
+                    <input type="checkbox" name="diet" id="smallAnimal" value="smallAnimal">
+                    Small animals
+                </label>
+                <label for="aquaticPlants">
+                    <input type="checkbox" name="diet" id="aquaticPlants" value="aquaticPlants">
+                    Aquatic plants
                 </label>
             </div>
             <div class="column">
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Aquatic plants
+                <label for="poop">
+                    <input type="checkbox" name="diet" id="poop" value="poop">
+                    Their own poop
                 </label>
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    their own feces
+                <label for="insects">
+                    <input type="checkbox" name="diet" id="insects" value="insects">
+                    Insects
                 </label>
-                <label for="two">
-                    <input type="checkbox" name="bleble" id="two" value="two">
-                    Very specific leaves
+                <label for="fruits">
+                    <input type="checkbox" name="diet" id="fruits" value="fruits">
+                    Fruits
+                </label>
+                <label for="remains">
+                    <input type="checkbox" name="diet" id="remains" value="remains">
+                    Animal remains
                 </label>
             </div>
             </fieldset>
@@ -127,7 +209,6 @@
 
     </main>
     <footer>
-<!-- poner nombre, año, link al github y link a fcc -->
         <p>Maura Roll 2022 - <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Survey Form</a> project for <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>.</p>
         <div >
             <a href="https://github.com/maura2403/surveyForm"class="github">

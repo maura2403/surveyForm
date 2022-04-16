@@ -30,7 +30,7 @@ https://avatars.githubusercontent.com/u/33059908?s=280&v=4
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-image: url("https://thumbs.dreamstime.com/b/vector-light-grey-succulent-plant-texture-drawing-seamless-pattern-background-great-subtle-botanical-modern-backgrounds-fabric-90904464.jpg");
+    background-image: url("assets/flowerBackground.jpg");
     background-color: #004F2D;
     background-repeat: repeat;
     background-blend-mode: multiply;
@@ -56,8 +56,7 @@ h1{
 main{
     width:60%;
     margin: 0 auto;
-   /*check how does it look without the background color*/
-   background-color: #156945;
+   background-color: rgba(21, 105, 69,0.5);
    color: white;
    border-radius: 10px;
    padding: 1rem;
