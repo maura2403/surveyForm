@@ -1,28 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/*to do:
-animation for submit button,
-change link color when its been pressed
-add useful links to lern more about carpinchos
-media queries
-add carpincho images
-add variables and their fallbacks
-*/
-/*
-font-family: 'Montserrat', sans-serif;
-
-dark green: #004F2D
-lighter green: #156945
-yellow: #FFD700
-
-wikipedia:
-https://en.wikipedia.org/wiki/Capybara
-https://es.wikipedia.org/wiki/Hydrochoerus_hydrochaeris
-vector:
-https://avatars.githubusercontent.com/u/33059908?s=280&v=4
-
-*/
-
+:root{
+    --darkGreen: #004F2D;
+    --lightGreen: #156945;
+    --yellow: #FFD700;
+}
 *{
     margin:0;
     padding: 0;
@@ -31,12 +13,13 @@ https://avatars.githubusercontent.com/u/33059908?s=280&v=4
 }
 body{
     background-image: url("assets/flowerBackground.jpg");
-    background-color: #004F2D;
+    background-color: var(--darkGreen, darkgreen);
     background-repeat: repeat;
     background-blend-mode: multiply;
+    
 }
 header{
-    color: #FFD700;
+    color: var(--yellow, yellow);
     margin: auto;
     text-align: center;
     padding: 2rem;
@@ -71,9 +54,11 @@ fieldset{
 legend{
     font-weight: bold;
     font-size: 1.25rem;
-    color: #FFD700;
+    color: var(--yellow, yellow);
 }
-
+.intro{
+    text-align: center;
+}
 .personal-group{
     flex-direction: column;
 }
@@ -85,7 +70,10 @@ legend{
     width: 100%;
 }
 
-
+option{
+    max-width: inherit;
+    
+}
 .radio-group, .checkbox-group{
     justify-content: space-between; 
 }
@@ -104,15 +92,24 @@ legend{
 button{
     width: 100%;
     padding: 1rem;
-    background-color: #FFD700;
+    background-color: var(--yellow, yellow);
     border: none;
-    color:#004F2D;
+    color:var(--darkGreen, green);
     border-radius: 10px;
     cursor: pointer;
+}
+button:hover{
+    font-weight: bolder;
 }
 
 .comments{
     flex-direction: column;
+}
+textarea{
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    resize: none;
 }
 
 footer{
@@ -122,12 +119,31 @@ footer{
     color: white;
     padding: 1rem;
 }
-a:hover{
-    color: #FFD700;
+a{
+    color: white;
+    font-weight: bold;
 }
-.github {
+a:visited{
+    color: black;
+}
+a:hover{
+    color: var(--yellow, yellow);
+}
+.github-link {
     display: flex;
     align-items: center;
     width: fit-content;
     margin: 0 auto;
+}
+
+@media(max-width:730px){
+    main{
+        width:100%;
+        border-radius: 0;
+    }
+
+    .radio-group, .checkbox-group{
+        flex-direction:column;
+        /*justify-content: space-between; */
+    }
 }
